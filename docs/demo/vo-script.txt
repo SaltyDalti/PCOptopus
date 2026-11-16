@@ -1,0 +1,10 @@
+# PCOptopus demo VO — one line per frame (01..08)
+
+01|PCOptopus. One goal: keep Pulse at one hundred. We're at eighty-four — storage is the main drag.
+02|Fight for one hundred applies every safe, granted fix. Nothing deletes automatically.
+03|The storage plan lists only demo reclaimables — about one point two gigabytes of fake leftovers we seeded for this walkthrough.
+04|Every change is journaled with before and after. Undo is one click.
+05|The contract starts empty. No grants means zero writes to the system.
+06|Machine identity is sanitized for demos: Demo MacBook Pro, Apple M four Pro.
+07|Settings holds the kill switch and quiet controls — safety stays one click away.
+08|We removed only the fake seed. The scan comes back clean. PCOptopus recommends; you decide what leaves the disk.

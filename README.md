@@ -4,7 +4,9 @@
 
 PCOptopus watches this Mac in real time, explains what’s dragging health in plain language, and applies only **reversible** tweaks you grant. Storage cleanup is recommend-only — it never deletes for you.
 
-![Today — Fight for Pulse 100](docs/images/today-pulse.png)
+[![Watch the demo](docs/images/today-pulse.png)](docs/demo/pcoptopus-demo-vo.mp4)
+
+**[▶ Watch the narrated demo (~50s)](docs/demo/pcoptopus-demo-vo.mp4)** — Fight for Pulse 100, journal/undo, empty-by-default contract, recommend-only cleanup.
 
 ## Why it exists
 
@@ -68,7 +70,21 @@ swift run PCOptopusVerification
 
 CI runs the same harness on every push (see [`.github/workflows/verify.yml`](.github/workflows/verify.yml)).
 
-## Demo script (≈90 seconds)
+## Demo
+
+Narrated walkthrough: [`docs/demo/pcoptopus-demo-vo.mp4`](docs/demo/pcoptopus-demo-vo.mp4)
+
+Rebuild locally:
+
+```bash
+./Scripts/seed-demo-storage.sh
+open -n /Applications/PCOptopus.app --args --demo
+./Scripts/run-demo-capture.sh
+./Scripts/build-demo-vo.sh
+./Scripts/cleanup-demo-storage.sh
+```
+
+Live walkthrough (≈90 seconds):
 
 1. Open Today — Pulse below 100, subtitle **One goal: Pulse 100**
 2. Tap **Fight for 100** — grants/applies safe fixes; storage scan lists reclaim candidates

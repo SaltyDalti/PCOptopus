@@ -212,7 +212,9 @@ public struct SlowSensors: Sendable {
             #endif
         }()
         // GPU cores via system_profiler is slow — keep seed unless we already know.
-        if let name = Host.current().localizedName {
+        if DemoMode.isEnabled {
+            identity.name = DemoMode.displayName
+        } else if let name = Host.current().localizedName {
             identity.name = name
         }
         return identity

@@ -119,22 +119,35 @@ public struct StorageScanner: Sendable {
         // "Allow" sheets and feels like permissions are going crazy — especially
         // while the app is still ad-hoc signed. Full Disk Access covers these
         // Library paths without per-folder prompts.
-        let roots: [(path: String, category: StorageCandidate.Category)] = [
-            ("\(home)/.Trash", .trash),
-            ("\(home)/Library/Caches", .cache),
-            ("\(home)/Library/Logs", .log),
-            ("\(home)/Library/Developer/Xcode/DerivedData", .buildArtifact),
-            ("\(home)/Library/Developer/Xcode/Archives", .buildArtifact),
-            ("\(home)/Library/Developer/CoreSimulator/Caches", .buildArtifact),
-            ("\(home)/Library/Application Support/Caches", .cache),
-            ("\(home)/Library/Application Support/Steam", .appData),
-            ("\(home)/Library/Application Support/BlueStacks", .appData),
-            ("\(home)/Library/Application Support/Adobe", .appData),
-            ("\(home)/Library/Application Support/Google", .appData),
-            ("\(home)/Library/Application Support/Discord", .appData),
-            ("\(home)/Library/Application Support/Code", .cache),
-            ("\(home)/Library/Application Support/Cursor", .cache)
-        ]
+        //
+        // Demo mode: only the seeded PCOptopusDemo folder so recordings never
+        // surface real Discord/Code/Adobe paths or other personal leftovers.
+        let roots: [(path: String, category: StorageCandidate.Category)] = {
+            if DemoMode.isEnabled {
+                let demo = DemoMode.seedCacheDirectory.path
+                return [
+                    (demo, .cache),
+                    ("\(demo)/OldInstallerLeftovers", .buildArtifact),
+                    ("\(demo)/StaleBuildCache", .buildArtifact)
+                ]
+            }
+            return [
+                ("\(home)/.Trash", .trash),
+                ("\(home)/Library/Caches", .cache),
+                ("\(home)/Library/Logs", .log),
+                ("\(home)/Library/Developer/Xcode/DerivedData", .buildArtifact),
+                ("\(home)/Library/Developer/Xcode/Archives", .buildArtifact),
+                ("\(home)/Library/Developer/CoreSimulator/Caches", .buildArtifact),
+                ("\(home)/Library/Application Support/Caches", .cache),
+                ("\(home)/Library/Application Support/Steam", .appData),
+                ("\(home)/Library/Application Support/BlueStacks", .appData),
+                ("\(home)/Library/Application Support/Adobe", .appData),
+                ("\(home)/Library/Application Support/Google", .appData),
+                ("\(home)/Library/Application Support/Discord", .appData),
+                ("\(home)/Library/Application Support/Code", .cache),
+                ("\(home)/Library/Application Support/Cursor", .cache)
+            ]
+        }()
 
         for root in roots {
             let remaining = deadline.timeIntervalSinceNow
