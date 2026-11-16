@@ -1,0 +1,25 @@
+name: Verify
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  verification:
+    name: PCOptopusVerification
+    runs-on: macos-14
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Swift version
+        run: swift --version
+
+      - name: Resolve packages
+        run: swift package resolve
+
+      - name: Run verification harness
+        run: swift run PCOptopusVerification

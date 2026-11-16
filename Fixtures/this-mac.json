@@ -1,0 +1,97 @@
+{
+  "capturedAt": "2026-11-15T23:42:00-07:00",
+  "redacted": true,
+  "identity": {
+    "name": "MacBook Pro",
+    "modelIdentifier": "Mac16,7",
+    "chip": "Apple M4 Pro",
+    "performanceCores": 10,
+    "efficiencyCores": 4,
+    "gpuCores": 20,
+    "memoryBytes": 25769803776,
+    "storageContainerBytes": 493921239040,
+    "osVersion": "27.3",
+    "osBuild": "26C5035r",
+    "sipEnabled": true,
+    "architecture": "arm64"
+  },
+  "pmsetCustom": {
+    "AC Power": {
+      "sleep": 1,
+      "displaysleep": 10,
+      "disksleep": 10,
+      "powernap": 1,
+      "womp": 1,
+      "hibernatemode": 0,
+      "standby": 0,
+      "tcpkeepalive": 1,
+      "ttyskeepawake": 1
+    },
+    "Battery Power": {
+      "sleep": 15,
+      "displaysleep": 30,
+      "disksleep": 0,
+      "powernap": 0,
+      "womp": 0,
+      "hibernatemode": 3,
+      "standby": 1,
+      "tcpkeepalive": 1,
+      "ttyskeepawake": 1
+    }
+  },
+  "pmsetCurrent": {
+    "sleep": 15,
+    "displaysleep": 30,
+    "disksleep": 0,
+    "powernap": 0,
+    "womp": 0,
+    "hibernatemode": 3,
+    "standby": 1
+  },
+  "storage": {
+    "containerBytes": 493921239040,
+    "availableBytes": 61188911104,
+    "usedBytes": 404732313600,
+    "usedFraction": 0.87,
+    "purgeableBytes": 0
+  },
+  "memory": {
+    "pressure": "Normal",
+    "physicalBytes": 25769803776,
+    "compressorBytes": 3171942400,
+    "swapBytes": 0,
+    "swapins": 0,
+    "swapouts": 0
+  },
+  "energy": {
+    "powerSource": "Battery",
+    "thermalState": "Nominal",
+    "lowPowerMode": false,
+    "assertionsPreventSleep": false,
+    "clamshell": false
+  },
+  "background": {
+    "userAgentLabels": [
+      "com.BlueStacks.AppPlayer.Service",
+      "com.BlueStacks.AppPlayer.UninstallWatcher",
+      "com.BlueStacks.AppPlayer.Updater",
+      "com.adobe.GC.Invoker-1.0",
+      "com.adobe.ccxprocess",
+      "com.cvte.swst.service",
+      "com.dropbox.DropboxUpdater.wake",
+      "com.dropbox.dropboxmacupdate.agent",
+      "com.dropbox.dropboxmacupdate.xpcservice",
+      "com.google.GoogleUpdater.wake",
+      "com.google.keystone.agent",
+      "com.google.keystone.xpcservice",
+      "com.valvesoftware.steamclean"
+    ]
+  },
+  "software": {
+    "brewPrefixes": ["/usr/local", "/opt/homebrew"],
+    "brewPathArch": "x86_64",
+    "firstBrew": "/usr/local/bin/brew",
+    "nativeBrewExists": true
+  },
+  "notes": "Serial numbers and home paths omitted. Planning seed only — live sensors re-measure."
+}
