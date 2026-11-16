@@ -9,3 +9,7 @@ dist/
 *.app/
 docs/demo/vo-work/
 docs/demo/pcoptopus-demo.mp4
+docs/demo/.elevenlabs.env
+.env
+.env.local
+*.elevenlabs.env
