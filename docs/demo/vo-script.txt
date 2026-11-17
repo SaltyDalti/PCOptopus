@@ -1,10 +1,11 @@
-# PCOptopus demo VO — one line per frame (01..08). Spoken, not essay.
+# PCOptopus commercial demo VO — one line per frame (01..08).
+# Plain language. Assume the viewer is not technical.
 
-01|This is PCOptopus — a native Mac coach with one job: keep Pulse at a hundred.
-02|Pulse is eighty-four. Storage is the drag. One tap: Fight for a hundred.
-03|It plans reclaimable caches — recommend only. It never deletes for you.
-04|Journal records every change with before and after, and real Undo.
-05|Contract starts empty. No grant, no write. That's the safety model.
-06|Same machine, redacted for demos — M four Pro, identity sanitized.
-07|Kill switch lives in Settings. Autopilot stops cold when you say so.
-08|That's the loop: measure, fight, prove it, stay reversible.
+01|Meet PCOptopus — an app that watches over your Mac the way a checkup watches over your health. Its score is called Pulse. One hundred means your computer is in great shape.
+02|Right now Pulse is eighty-four. That means something is holding your Mac back. Here, it's running low on free space — like a closet that's too full to close. One button starts the fix: Fight for a hundred.
+03|PCOptopus looks for old leftover files you probably don't need anymore, and shows you a clear list with sizes. Important: it never throws anything away by itself. It only recommends. You stay in control.
+04|When it does change a setting, it writes it down in a Journal — what it was before, what it is now. Changed your mind? Hit Undo, and it puts things back.
+05|Before it can change anything, you have to give permission in the Contract. By default, that list is empty — so if you never say yes, it never touches your system. Safety first.
+06|This screen is simply your Mac's ID card — the model and chip — so you always know what machine you're taking care of.
+07|And if you ever want everything to stop, Settings has a kill switch. One click, and PCOptopus stands down.
+08|So that's the idea: a simple health score for your Mac, gentle recommendations, and nothing happens without your say-so. Keep Pulse at a hundred — and keep your computer feeling fast and trustworthy.
